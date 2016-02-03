@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: cc5cfe0653d124b47a266edf20f31a5b
+timeCreated: 1454535910
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Camera
+    100004: Crank
+    100006: Crank 1
+    100008: CrankHolder
+    100010: CrankRot
+    100012: Floor
+    100014: Foundation
+    100016: Lamp
+    100018: Lamp.001
+    100020: Lamp.002
+    100022: Lamp.003
+    100024: Lamp.004
+    100026: Log
+    100028: Piston
+    100030: Piston_end
+    100032: PistonLoc
+    100034: Platform
+    100036: Rail
+    100038: RailPlatform
+    100040: RailWagon
+    100042: Rod
+    100044: Rod 1
+    100046: Rod_end
+    100048: Roof
+    100050: RoofFrame
+    100052: Saw
+    100054: SawSlider
+    100056: SawSliderFrame
+    100058: Wall
+    100060: //RootNode
+    100062: Wheel
+    100064: Wheel 1
+    100066: Wheel_end
+    100068: WoodenFrame
+    400000: Armature
+    400002: Camera
+    400004: Crank
+    400006: Crank 1
+    400008: CrankHolder
+    400010: CrankRot
+    400012: Floor
+    400014: Foundation
+    400016: Lamp
+    400018: Lamp.001
+    400020: Lamp.002
+    400022: Lamp.003
+    400024: Lamp.004
+    400026: Log
+    400028: Piston
+    400030: Piston_end
+    400032: PistonLoc
+    400034: Platform
+    400036: Rail
+    400038: RailPlatform
+    400040: RailWagon
+    400042: Rod
+    400044: Rod 1
+    400046: Rod_end
+    400048: Roof
+    400050: RoofFrame
+    400052: Saw
+    400054: SawSlider
+    400056: SawSliderFrame
+    400058: Wall
+    400060: //RootNode
+    400062: Wheel
+    400064: Wheel 1
+    400066: Wheel_end
+    400068: WoodenFrame
+    2300000: Crank 1
+    2300002: CrankHolder
+    2300004: Floor
+    2300006: Foundation
+    2300008: Log
+    2300010: Platform
+    2300012: Rail
+    2300014: RailPlatform
+    2300016: RailWagon
+    2300018: Rod 1
+    2300020: Roof
+    2300022: RoofFrame
+    2300024: Saw
+    2300026: SawSlider
+    2300028: SawSliderFrame
+    2300030: Wall
+    2300032: Wheel 1
+    2300034: WoodenFrame
+    3300000: Crank 1
+    3300002: CrankHolder
+    3300004: Floor
+    3300006: Foundation
+    3300008: Log
+    3300010: Platform
+    3300012: Rail
+    3300014: RailPlatform
+    3300016: RailWagon
+    3300018: Rod 1
+    3300020: Roof
+    3300022: RoofFrame
+    3300024: Saw
+    3300026: SawSlider
+    3300028: SawSliderFrame
+    3300030: Wall
+    3300032: Wheel 1
+    3300034: WoodenFrame
+    4300000: RoofFrame
+    4300002: Foundation
+    4300004: Wall
+    4300006: Platform
+    4300008: Roof
+    4300010: RailPlatform
+    4300012: Log
+    4300014: RailWagon
+    4300016: Rail
+    4300018: WoodenFrame
+    4300020: Floor
+    4300022: Crank
+    4300024: Rod
+    4300026: SawSlider
+    4300028: Saw
+    4300030: Wheel
+    4300032: CrankHolder
+    4300034: SawSliderFrame
+    7400000: Armature|Sawing
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
