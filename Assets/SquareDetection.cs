@@ -47,4 +47,13 @@ public class SquareDetection : MonoBehaviour {
 			}
 		return true;
 	}
+
+	public void SetUnconstructable(){
+		int rowStart = (int)transform.parent.position.x;
+		int columnStart = (int)transform.parent.position.z;
+		for (int i = rowStart; i < rowStart + rowNumber; i++)
+			for (int j = columnStart; j < columnStart + columnNumber; j++) {
+				gameLogic.GetComponent<SquareDataKeeper> ().MapConstructable [i, j] = false;
+			}
+	}
 }

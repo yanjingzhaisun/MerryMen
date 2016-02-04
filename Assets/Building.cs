@@ -10,6 +10,8 @@ public class Building : MonoBehaviour {
 	[HideInInspector]
 	public bool isBuilt = false;
 
+	public Transform builtPrefab;
+
 	Material mat;
 
 	void Awake(){
@@ -18,6 +20,7 @@ public class Building : MonoBehaviour {
 	}
 	void Start () {
 //		mat = transform.FindChild ("WaterPoweredSawmillUpload").FindChild ("Floor").GetComponent<renderer> ();
+		mat = transform.parent.FindChild("Material").GetComponent<Renderer>().sharedMaterials[0];
 
 		//TODO
 		//get those shared Material and change them as color changed.
@@ -39,10 +42,15 @@ public class Building : MonoBehaviour {
 	void Update_Color(){
 		//if {}
 		if (GetComponent<SquareDetection> ().IsOKToBuild ()) {
-			Debug.Log ("Ok to build");
+			//Debug.Log ("Ok to build");
+			mat.color = new Color(0.1796875f, 0.796875f, 0.44140625f,0.5f);
+			//#2ecc71
 		} else {
-			Debug.Log ("Not Ok to build");
+			//Debug.Log ("Not Ok to build");
+			mat.color = new Color(0.90234375f, 0.296875f, 0.234375f,0.5f);
+			//#e74c3c
 		}
+
 	}
 	
 	// Update is called once per frame
@@ -50,9 +58,17 @@ public class Building : MonoBehaviour {
 		if (isBuilt)
 			return;
 		Update_Position ();
-
+		Update_Color ();
 		if (Input.GetMouseButtonDown (0)) {
-			Update_Color ();
+			if (GetComponent<SquareDetection> ().IsOKToBuild ()) {
+				Update_Color ();
+				isBuilt = true;
+				mat.color = Color.white;
+				GetComponent<SquareDetection> ().SetUnconstructable ();
+				Transform t = Instantiate (builtPrefab,new Vector3( transform.parent.position.x, transform.parent.position.y, transform.parent.position.z), Quaternion.identity) as Transform;
+				t.parent = GameObject.Find ("Buildings").transform;
+				Object.Destroy (transform.parent.gameObject);
+			}
 		}
 		//}
 
