@@ -16,6 +16,7 @@ public class BuildingDataParser : MonoBehaviour {
 			string[] entries = lines[0].Split(' ');
 			int rowNumber = int.Parse(entries[0]);
 			int columnNumber = int.Parse(entries[1]);
+			GetComponent<SquareDetection>().SetData(rowNumber, columnNumber);
 
 			//Debug.Log(fieldResources);
 

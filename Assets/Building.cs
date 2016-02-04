@@ -30,7 +30,7 @@ public class Building : MonoBehaviour {
 		bool didHit = Physics.Raycast (toMouse, out rhInfo, 2000f, layerMask);
 		if (didHit) {
 			transform.parent.position = new Vector3 (Mathf.Round (rhInfo.collider.transform.position.x), transform.parent.position.y, Mathf.Round (rhInfo.collider.transform.position.z));
-			Debug.Log(rhInfo.collider.transform.position.x + " " + rhInfo.collider.transform.position.z);
+			//Debug.Log(rhInfo.collider.transform.position.x + " " + rhInfo.collider.transform.position.z);
 		} else {
 			//Debug.Log ("HitNothing");
 		}
@@ -39,9 +39,9 @@ public class Building : MonoBehaviour {
 	void Update_Color(){
 		//if {}
 		if (GetComponent<SquareDetection> ().IsOKToBuild ()) {
-			
+			Debug.Log ("Ok to build");
 		} else {
-			
+			Debug.Log ("Not Ok to build");
 		}
 	}
 	
@@ -50,6 +50,10 @@ public class Building : MonoBehaviour {
 		if (isBuilt)
 			return;
 		Update_Position ();
+
+		if (Input.GetMouseButtonDown (0)) {
+			Update_Color ();
+		}
 		//}
 
 		//transform.parent.position = new Vector3 (Mathf.Round(mouseP.x), transform.parent.position.y, Mathf.Round( mouseP.z));

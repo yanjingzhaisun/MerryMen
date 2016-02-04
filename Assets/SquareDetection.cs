@@ -41,7 +41,7 @@ public class SquareDetection : MonoBehaviour {
 			return false;
 		
 		for (int i = rowStart; i < rowStart + rowNumber; i++)
-			for (int j = columnNumber; j < columnStart + columnNumber; j++) {
+			for (int j = columnStart; j < columnStart + columnNumber; j++) {
 				if (!gameLogic.GetComponent<SquareDataKeeper> ().MapConstructable [i, j])
 					return false; 
 			}
