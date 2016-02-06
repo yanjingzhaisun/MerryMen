@@ -39,7 +39,7 @@ public class SquareDetection : MonoBehaviour {
 			return false;
 		if (columnStart + columnNumber > totalColumnNumber)
 			return false;
-		Debug.Log ("RowStart: " + rowStart + "; ColumnStart: " + columnStart);
+		//Debug.Log ("RowStart: " + rowStart + "; ColumnStart: " + columnStart);
 		
 		for (int i = rowStart; i < rowStart + rowNumber; i++)
 			for (int j = columnStart; j < columnStart + columnNumber; j++) {

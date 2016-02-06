@@ -15,6 +15,9 @@ public class GameLogic : MonoBehaviour {
 	public int labourInUse;
 
 	[HideInInspector]
+	public int arrowNumber;
+
+	[HideInInspector]
 	public Text textAlert;
 
 	void Awake(){
@@ -22,6 +25,7 @@ public class GameLogic : MonoBehaviour {
 		labourLimit = 10;
 		woodNumber = 10;
 		labourInUse = 0;
+		arrowNumber = 0;
 		textAlert = GameObject.Find ("AlertText").GetComponent<Text> ();
 	}
 
@@ -50,25 +54,28 @@ public class GameLogic : MonoBehaviour {
 		t.text = woodNumber.ToString();
 		t = GameObject.Find ("ResourceLabour").GetComponent<Text> ();
 		t.text = labourInUse + " / " + labourLimit;
+		t = GameObject.Find ("ResourceArrow").GetComponent<Text> ();
+		t.text = arrowNumber.ToString ();
 	}
 
 	public void ShowAlert(string alertContent){
 		StopCoroutine (AlertColorFading());
+		Debug.Log ("StopAlertFading");
 		textAlert.text = alertContent;
 
-		textAlert.color = new Color (textAlert.color.r, textAlert.color.g, textAlert.color.b, 0);
-
+		textAlert.color = new Color (textAlert.color.r, textAlert.color.g, textAlert.color.b, 1);
+		Debug.Log ("StartAlertFading");
 		StartCoroutine (AlertColorFading());
 	}
 
 	IEnumerator AlertColorFading(){
-		Color end = new Color (textAlert.color.r, textAlert.color.g, textAlert.color.b, 1);
-		while (textAlert.color.a < 0.99){
-			textAlert.color = Color.Lerp (textAlert.color, end, 2);
-		//if (textAlert.color =)
+		Color end = new Color (textAlert.color.r, textAlert.color.g, textAlert.color.b, 0);
+		while (textAlert.color.a > 0.01){
+			textAlert.color = Color.Lerp (textAlert.color, end, 0.1f);
+			Debug.Log (textAlert.color);
 			yield return new WaitForSeconds(0.1f);
 		}
-		textAlert.color = new Color (textAlert.color.r, textAlert.color.g, textAlert.color.b, 1);
+		textAlert.color = end;
 
 	}
 
