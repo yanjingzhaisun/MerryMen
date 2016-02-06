@@ -33,12 +33,13 @@ public class SquareDetection : MonoBehaviour {
 	}
 
 	public bool IsOKToBuild(){
-		int rowStart = (int)transform.parent.position.x;
-		int columnStart = (int)transform.parent.position.z;
+		int rowStart = (int)transform.parent.position.z;
+		int columnStart = (int)transform.parent.position.x;
 		if (rowStart + rowNumber > totalRowNumber)
 			return false;
 		if (columnStart + columnNumber > totalColumnNumber)
 			return false;
+		Debug.Log ("RowStart: " + rowStart + "; ColumnStart: " + columnStart);
 		
 		for (int i = rowStart; i < rowStart + rowNumber; i++)
 			for (int j = columnStart; j < columnStart + columnNumber; j++) {
@@ -49,8 +50,8 @@ public class SquareDetection : MonoBehaviour {
 	}
 
 	public void SetUnconstructable(){
-		int rowStart = (int)transform.parent.position.x;
-		int columnStart = (int)transform.parent.position.z;
+		int rowStart = (int)transform.parent.position.z;
+		int columnStart = (int)transform.parent.position.x;
 		for (int i = rowStart; i < rowStart + rowNumber; i++)
 			for (int j = columnStart; j < columnStart + columnNumber; j++) {
 				gameLogic.GetComponent<SquareDataKeeper> ().MapConstructable [i, j] = false;

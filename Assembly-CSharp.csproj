@@ -47,10 +47,15 @@
   <ItemGroup>
      <Compile Include="Assets\Building.cs" />
      <Compile Include="Assets\BuildingDataParser.cs" />
+     <Compile Include="Assets\GUIBuildingControl.cs" />
+     <Compile Include="Assets\GUIControl.cs" />
+     <Compile Include="Assets\GameLogic.cs" />
      <Compile Include="Assets\GridGenerator.cs" />
+     <Compile Include="Assets\InfoManager.cs" />
      <Compile Include="Assets\MoveCamera.cs" />
      <Compile Include="Assets\SquareDataKeeper.cs" />
      <Compile Include="Assets\SquareDetection.cs" />
+     <None Include="Assets\sky5X\README.txt" />
      <None Include="Assets\Resources\building_data\woodhouse.txt" />
      <None Include="Assets\Resources\building_data\sawmill.txt" />
      <None Include="Assets\Resources\level_text\level_trial1.txt" />

@@ -1,12 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Building.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GridGenerator.cs">
     <Files>
-      <File FileName="Assets/Building.cs" Line="70" Column="37" />
-      <File FileName="Assets/SquareDetection.cs" Line="56" Column="37" />
-      <File FileName="Assets/BuildingDataParser.cs" Line="17" Column="27" />
-      <File FileName="Assets/SquareDataKeeper.cs" Line="1" Column="1" />
-      <File FileName="Assets/MoveCamera.cs" Line="22" Column="6" />
+      <File FileName="Assets/GridGenerator.cs" Line="1" Column="1" />
+      <File FileName="Assets/SquareDataKeeper.cs" Line="36" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

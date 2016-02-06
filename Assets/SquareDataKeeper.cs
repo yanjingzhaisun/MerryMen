@@ -7,9 +7,17 @@ public class SquareDataKeeper : MonoBehaviour {
 	[HideInInspector]
 	public bool [,] MapConstructable;
 
+	[HideInInspector]
+	public static SquareDataKeeper instance;
+
 	// Use this for initialization
+
+	void Awake(){
+		instance = this;
+	}
+
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
@@ -25,7 +33,7 @@ public class SquareDataKeeper : MonoBehaviour {
 			for (int j = 0; j < b; j++)
 				MapConstructable [i, j] = true;
 		//TODO
-		MapConstructable [0, 0] = false;
+		//MapConstructable [0, 0] = false;
 		
 	}
 }
